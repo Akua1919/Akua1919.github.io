@@ -1,54 +1,91 @@
-<p align="center">
-  <samp>
-    Hi! I'm currently leading the design team at <a href="https://www.optimism.io/">Optimism</a>,
-    <br>contributing to <a href="https://www.optimism.io/">the vision to scale Ethereum</a>.
-  </samp>
-</p>
+# 联系方式
 
-<p align="center">
-  <samp>
-    <img src="https://github.com/pifafu/pifafu/assets/5679180/07d226f9-2b92-4077-af43-37c92be369f2" width="28px">
-  </samp>
-</p>
+（HR会打印你的简历，用于在面试的时候联系，所以联系方式放到最上边会比较方便）
 
-<p align="center">
-  <samp>
-    Before that, I designed for GitHub for 6+ years.
-    <br>It was here where I grew up, developed my opinions,
-    <br>and became a GitHub maxi.
-  </samp>
-</p>
+- 手机：186.... （如果是外地手机，可注明。如经常关机，要写上最优联系时间）
+- Email：goodman@gmail.com （虽然我觉得QQ邮箱无所谓，不过有些技术人员比较反感，建议用G，非要用的话，不要用数字邮箱名）
+- QQ/微信号：qing_geee（提供一个通过网络可以联系到你的方式）
 
-<p align="center">
-  <samp>
-    <img src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif" width="28px">
-  </samp>
-</p>
+# 个人信息
 
-<p align="center">
-  <samp>
-    @ me on <a href="https://twitter.com/pifafu">Twitter</a><br><br>
-    <img src="https://i.imgur.com/kdKhgx6.gif" width="240px" align="center">
-  </samp>
-</p>
+ - 沉默王二/男/1989 
+ - 专科/家里蹲大学
+ - 工作年限：10年
+ - 技术博客：http://www.itwanger.com 
+ - Github：http://github.com/qinggee ( 有原创repo的Github帐号会极大的提升你的个人品牌  )
 
-<details>
-  <summary><b>:telescope: 2023 goal</b></summary>
-  I've become deeply committed to <a href="https://www.optimism.io/vision">Optimism's vision</a> of the decentralized future. My most important goal this year is to grow the design function at OP Labs such that I'm the worst designer on the team. Building this design team will be my ongoing contribution in supporting Optimism's progress on solving gnarly problems like public goods funding, identity, and contribution in web3.
-</details>
+ - 期望职位：Java 高级程序员，系统架构师
+ - 期望薪资：税前月薪30k~50k，特别喜欢的公司可例外
+ - 期望城市：洛阳
 
-<details>
-  <summary><b>:cyclone: 2022 goal</b></summary>
-   My 2022 goal was to start learning and designing for governance in web3. This is still an ongoing journey, but I've made some progress through my time at OP Labs :relieved:
-</details>
 
-<details>
-  <summary><b>:sparkles: 2021 goal</b></summary>
-  ✨ <strong><a href="https://prettygood.club/">I DID IT!</a></strong> ✨ I <i>finally</i> focused on a body of work in pottery. I'm damn proud. Going to keep it up, but slowly. :)<br><br>
-  <i>I didn't complete my 2020 goal, but it was a crazy different year 😂 In 2021, I want to finally have a portfolio site and make an online storefront for my <a href="https://www.instagram.com/prettygoodclub/" target="_blank">pottery</a>. Here's to new aspirations and forgiving yourself for not finishing every goal you set for yourself for the new year.</i>
-</details>
+# 工作经历
+（工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组）
 
-<details>
-  <summary><b>:skull: 2020 goal</b></summary>
-  I want to make a little game this year.<br>I'm currently working on a small gameboy game with <a href="https://github.com/tfgrimes">@tfgrimes</a> using <a href="https://github.com/chrismaltby/gb-studio" target="_blank">GBStudio.dev</a>, which is an awesome game creator tool that makes it really easy to design a game if you're primarily focusing on the art and story (like myself). I'm hoping to print this on a cartridge when I'm done so you can actually experience it on a Gameboy!
-</details>
+## ABC公司 （ 2010年10月 ~ 2014年2月 ）
+
+### DEF项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### GHI项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+
+  
+## JKL公司 （ 2010年3月 ~ 2012年8月 ）
+
+### MNO项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### PQR项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+  
+  
+# 开源项目和作品
+（这一段用于放置工作以外的、可证明你的能力的材料）
+
+## 开源项目
+（对于程序员来讲，没有什么比Show me the code能有说服力了）
+
+  - [STU](https://github.com/qinggee/itwanger.github.io)：项目的简要说明，Star和Fork数多的可以注明
+  - [WXYZ](http://github.com/yourname/projectname)：项目的简要说明，Star和Fork数多的可以注明
+
+## 技术文章
+（挑选你写作或翻译的技术文章，好的文章可以从侧面证实你的表达和沟通能力，也帮助招聘方更了解你）
+
+- [在三线城市工作爽吗？](https://blog.csdn.net/qing_gee/article/details/104323806)
+- [零基础 Java 自学指南(翻译文章)](https://blog.csdn.net/qing_gee/article/details/104774776) （ 好的翻译文章可以侧证你对英文技术文档的阅读能力）
+
+## 演讲和讲义
+（放置你代表公司在一些技术会议上做过的演讲，以及你在公司分享时制作的讲义）
+
+  - 2019年公司内部演讲：[还有一周呢，就无心撸码着急回家？](https://blog.csdn.net/qing_gee/article/details/103967005)
+  - 2020年公司内部分享：[这两个IDE插件，可以让你写出质量杠杠的代码](https://blog.csdn.net/qing_gee/article/details/103831517)
+    
+    
+# 技能清单
+（我一般主张将技能清单写入到工作经历里边去。不过很难完整，所以有这么一段也不错）
+
+以下均为我熟练使用的技能
+
+- Web开发：Java/JavaScript
+- 后端框架：Spring MVC/Spring Boot
+- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic
+- 数据库相关：MySQL/PgSQL/PDO/SQLite
+- 版本管理、文档和自动化部署工具：Svn/Git/Maven
+- 单元测试：JUnit/TestNG
+      
+---      
+# 致谢
+感谢您花时间阅读我的简历，期待能有机会和您共事。
