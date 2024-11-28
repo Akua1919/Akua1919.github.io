@@ -7,8 +7,8 @@
  - 夏苏安/男/1999 
  - 硕士研究生/上海科技大学
  - 工作年限：-
- - 技术博客：http://www.itwanger.com 
- - Github：http://github.com/Akua1919
+ - 技术博客：
+ - Github：
 
  - 期望职位：CV
  - 期望薪资：面谈
