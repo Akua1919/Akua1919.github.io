@@ -155,12 +155,58 @@ h1 {
   font-size: 1.04rem;
 }
 
+.highlight-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.highlight-strip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 5px 11px;
+  border: 1px solid rgba(199, 130, 47, 0.36);
+  border-radius: 8px;
+  background: rgba(244, 227, 199, 0.56);
+  color: #744a19;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
 .intro__panel {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.82);
   box-shadow: var(--shadow);
   padding: 24px;
+}
+
+.portrait-card {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.portrait-card img {
+  width: 152px;
+  height: 190px;
+  border: 1px solid rgba(23, 33, 28, 0.14);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 14px 30px rgba(23, 33, 28, 0.12);
+}
+
+.portrait-card figcaption {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
 }
 
 .quick-facts {
@@ -411,13 +457,15 @@ h1 {
   min-height: 28px;
   display: inline-flex;
   align-items: center;
-  white-space: nowrap;
+  max-width: 100%;
   border-radius: 8px;
   background: var(--warm-soft);
   color: #744a19;
   padding: 3px 9px;
   font-size: 0.8rem;
   font-weight: 900;
+  line-height: 1.35;
+  text-align: right;
 }
 
 .project-item ul {
@@ -533,6 +581,11 @@ h1 {
   .project-item__topline {
     display: grid;
     gap: 8px;
+  }
+
+  .project-item__topline span {
+    justify-self: start;
+    text-align: left;
   }
 
   h1 {
