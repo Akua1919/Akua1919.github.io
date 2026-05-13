@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="夏苏安的在线简历，方向为计算机视觉、非视域成像、4D Gaussian Splatting、VR 直播与沉浸式渲染。"
+      content="夏苏安的在线简历，方向为计算机视觉、3D/4D Gaussian Splatting、AIGC、VR 直播与沉浸式渲染。"
     >
     <title>夏苏安 | CV 工程师在线简历</title>
     <link rel="stylesheet" href="styles.css">
@@ -31,15 +31,16 @@
     <main id="top" class="page-shell">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro__content">
-          <p class="eyebrow">Computer Vision · NLOS Imaging · 4DGS</p>
+          <p class="eyebrow">Computer Vision · 3D/4D Reconstruction · AIGC</p>
           <h1 id="intro-title">夏苏安</h1>
           <p class="intro__subtitle">CV 工程师候选人 / 上海科技大学计算机科学与技术硕士</p>
           <p class="intro__summary">
-            关注计算机视觉、计算摄影学、非视域成像、3D/4D 重建与沉浸式内容系统。具备从研究方法、训练框架到 Unity / OpenXR 端侧渲染与 VR 直播链路搭建的完整项目经验。
+            关注计算机视觉、3D/4D Gaussian Splatting、2D/3D AIGC 与沉浸式内容系统。具备从重建算法、训练框架到 Unity / OpenXR 端侧渲染与 VR 直播链路搭建的完整项目经验。
           </p>
           <div class="highlight-strip" aria-label="核心亮点">
-            <span>HOLI-1-to-3 / TPAMI</span>
             <span>4D Gaussian Splatting</span>
+            <span>2D/3D AIGC</span>
+            <span>8 x RTX 5090 多卡训练</span>
             <span>Genlock 多机同步</span>
             <span>WebRTC 低延时直播</span>
           </div>
@@ -48,7 +49,7 @@
         <aside class="intro__panel" aria-label="简历摘要">
           <figure class="portrait-card">
             <img src="assets/self-150kb.jpg" alt="夏苏安证件照">
-            <figcaption>CV / NLOS / 3D 重建方向</figcaption>
+            <figcaption>CV / 3D/4D 重建 / AIGC 方向</figcaption>
           </figure>
           <dl class="quick-facts">
             <div>
@@ -65,14 +66,14 @@
             </div>
           </dl>
           <div class="cta-row">
-            <a class="button" href="resume.md" title="查看 Markdown 简历">
+            <a class="button" href="resume.pdf" title="下载 PDF 简历">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
                 <path d="M14 2v6h6"></path>
                 <path d="M9 15h6"></path>
                 <path d="M9 18h6"></path>
               </svg>
-              <span>Markdown</span>
+              <span>PDF 简历</span>
             </a>
             <a class="button button--quiet" href="mailto:956974516@qq.com" title="发送邮件">
               <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -100,7 +101,7 @@
               </li>
               <li>
                 <span>方向</span>
-                <strong>CV / NLOS</strong>
+                <strong>CV / 3D 重建</strong>
               </li>
               <li>
                 <span>出生年份</span>
@@ -113,11 +114,9 @@
             <h2>技能清单</h2>
             <div class="tag-group" aria-label="技能标签">
               <span>Computer Vision</span>
-              <span>NLOS Imaging</span>
-              <span>Transient Imaging</span>
-              <span>4DGS</span>
-              <span>Neural Rendering</span>
+              <span>3D/4D Gaussian Splatting</span>
               <span>AIGC</span>
+              <span>Neural Rendering</span>
               <span>Python</span>
               <span>PyTorch</span>
               <span>C++</span>
@@ -126,6 +125,8 @@
               <span>OpenXR</span>
               <span>WebRTC</span>
               <span>Flutter</span>
+              <span>Multi-GPU Training</span>
+              <span>Genlock</span>
               <span>Git</span>
               <span>Codex</span>
               <span>Claude Code</span>
@@ -170,7 +171,7 @@
               <div class="timeline-item__body">
                 <h3>上海科技大学 · 计算机科学与技术</h3>
                 <p>
-                  本科 + 硕士研究生，导师组：虞晶怡。研究方向包括计算机视觉、AI、计算摄影学和非视域成像，关注 2D/3D AIGC、瞬态成像、3D/4D 重建与神经渲染。
+                  本科 + 硕士研究生，导师组：虞晶怡。研究方向包括计算机视觉、AI、计算摄影学和非视域成像，关注 3D/4D 重建、2D/3D AIGC、瞬态成像与神经渲染。
                 </p>
               </div>
             </article>
@@ -185,47 +186,51 @@
               <article class="project-item">
                 <div class="project-item__topline">
                   <h3>4DGS 重建项目</h3>
-                  <span>4K · Multi-GPU · OpenXR</span>
+                  <span>4K · 8 x RTX 5090 · OpenXR</span>
                 </div>
                 <p>
-                  从零搭建动态 3D/4D 重建系统，覆盖多相机同步、训练初始化、多卡训练、Unity 端实时渲染与头显观看链路。
+                  从零搭建动态 3D/4D 重建系统，覆盖多相机同步、训练初始化、动静分离、多卡训练、Unity 端实时渲染与头显观看链路。
                 </p>
                 <ul>
-                  <li>评估多相机同步方案，最终采用 Genlock 实现帧级同步，为动态重建提供稳定输入。</li>
-                  <li>基于 Spacetime、FreeTimeGS 等方向进行方法开发，支持 4K 级别动态场景重建。</li>
-                  <li>引入前馈式高斯初始化，加快训练收敛；实现多卡训练以支持更高分辨率实验。</li>
+                  <li>评估多相机同步方案，最终采用 Genlock + 闪光灯记录实现帧级多机同步。</li>
+                  <li>基于 SpacetimeGS、FreeTimeGS 等方法开发算法，实现 4K 级别动态场景重建。</li>
+                  <li>引入前馈式高斯初始化方案，加快训练收敛过程，提升重建迭代效率。</li>
+                  <li>引入动静分离方法，实现背景与运动主体的分别重建与结合，提升重建质量。</li>
+                  <li>实现多卡训练版本算法，支持 8 张 RTX 5090 显卡训练长时间与高分辨率数据。</li>
                   <li>在 Unity 中实现并优化高斯渲染代码，结合 OpenXR 支持在头显中观看 4DGS 模型。</li>
+                  <li>持续调研 GS 与世界模型的联系，面向 VR 内容制作与输出进行技术储备。</li>
                 </ul>
               </article>
 
               <article class="project-item">
                 <div class="project-item__topline">
                   <h3>VR 直播项目</h3>
-                  <span>500 ms · 7680 x 3840 · WebRTC</span>
+                  <span>500 ms · 7680 x 3840 · VR180</span>
                 </div>
                 <p>
-                  搭建从采集、传输、服务端到播放端的 VR 直播链路，面向高分辨率、低延时、头显内沉浸式观看场景。
+                  从零搭建 VR 直播链路，覆盖采集、传输、服务端、播放器和头显端沉浸式观看，支持高分辨率、低延时与多机位切换。
                 </p>
                 <ul>
-                  <li>完成相机、服务器、路由器、终端和网线等链路选型与联调，实现约 500 ms 低延时直播。</li>
-                  <li>部署流媒体服务器框架，多轮测试后采用 WebRTC 作为低延时传输协议。</li>
-                  <li>使用 Flutter 开发 2D 播放器，验证 WebRTC 在播放端的延时与画质表现。</li>
-                  <li>使用 Unity 开发沉浸式 3D 播放器，实现头显内实时观看 VR 直播内容。</li>
+                  <li>完成相机、服务器、路由器、终端等设备选型与网络布线，实现约 500 ms 低延时、7680 x 3840 高分辨率、多机位切换直播。</li>
+                  <li>部署 mediamtx 流媒体服务器框架，多轮测试不同传输协议后采用 WebRTC 作为低延时直播协议。</li>
+                  <li>使用 Flutter 开发 2D 播放器 app，测试 WebRTC 协议在实际播放端的低延时与画质表现。</li>
+                  <li>使用 Unity 开发沉浸式 3D 播放器 app，实现头显内实时观看 VR180 格式、7680 x 3840 分辨率、可多机位切换的 VR 直播内容。</li>
+                  <li>计划将系统部署到浙超足球比赛现场，验证局域网环境下的最终表现效果。</li>
                 </ul>
               </article>
 
-              <article class="project-item">
+              <article class="project-item project-item--secondary">
                 <div class="project-item__topline">
-                  <h3>HOLI-1-to-3：结合 AIGC 的非视域成像</h3>
-                  <span>TPAMI · RGB-T Fields · Diffusion Priors</span>
+                  <h3>HOLI-1-to-3：结合 AIGC 的整体 3D 生成</h3>
+                  <span>AIGC · 3D Generation · TPAMI</span>
                 </div>
                 <p>
-                  面向单视点整体 3D 形状恢复，将 LOS RGB/深度信息与 NLOS 瞬态测量结合，利用 AIGC 生成先验缓解不可见背面几何歧义。
+                  面向单视点整体 3D 形状恢复，结合 LOS RGB/深度信息与瞬态测量，利用 AIGC 生成先验缓解单图像 3D 生成中的不可见背面几何歧义。
                 </p>
                 <ul>
-                  <li>引入 Neural RGB-T Fields，统一建模 LOS radiance field 与 NLOS transient field。</li>
+                  <li>引入 Neural RGB-T Fields，统一建模 RGB 图像对应的 radiance field 与 transients 对应的 transient field。</li>
                   <li>采用两阶段优化：粗阶段结合 Stable Diffusion、Zero-1-to-3 与瞬态约束，细阶段通过 DMTet 提升 mesh 质量。</li>
-                  <li>在仿真与真实 RGB-transient 数据上验证；稀疏瞬态信息也能帮助消除不可见区域歧义并提升整体生成质量。</li>
+                  <li>在仿真与真实采集数据上验证方法效果，稀疏瞬态信息也能帮助消除不可见区域歧义并提升整体生成质量。</li>
                   <li>
                     <a class="inline-link" href="https://ieeexplore.ieee.org/document/10684158/">IEEE TPAMI 论文</a>
                   </li>
@@ -244,7 +249,7 @@
               <div class="timeline-item__body">
                 <h3>宁波万有引力电子科技有限公司</h3>
                 <p>
-                  负责 CV、3D 重建、VR 直播与沉浸式渲染相关工作，参与从算法验证、训练系统搭建到头显端展示的完整工程流程。
+                  负责 CV、3D 重建、VR 直播与沉浸式渲染相关工作，参与从算法开发、训练系统搭建到头显端展示的完整工程流程。
                 </p>
               </div>
             </article>

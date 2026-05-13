@@ -456,6 +456,19 @@ h1 {
   padding: 22px;
 }
 
+.project-item--secondary {
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.project-item--secondary h3 {
+  color: #2f3c35;
+}
+
+.project-item--secondary .project-item__topline span {
+  background: rgba(31, 122, 104, 0.08);
+  color: var(--accent-strong);
+}
+
 .publication-item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
