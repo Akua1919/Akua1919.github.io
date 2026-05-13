@@ -78,7 +78,7 @@
 
 - 编程与实验：Python、PyTorch、MATLAB、C++
 - 视觉与重建：Computer Vision、3D/4D Gaussian Splatting、AIGC、Non-line-of-sight Imaging、Transient Imaging、Neural Rendering
-- 图形与 XR：Unity、OpenXR、实时渲染、头显端内容展示
+- 图形与 XR：Unity、OpenXR、Blender、实时渲染、头显端内容展示
 - 直播与工程：WebRTC、Flutter、流媒体服务器、多机同步、Genlock、多卡训练
-- 开发工具：Codex、Claude Code、Git；能使用 AI 辅助开发工具提升代码实现、调试、重构与文档整理效率
+- 开发工具：Codex、Claude Code、Git；能熟练使用 AI 辅助开发工具提升代码实现、调试、重构与文档整理效率
 - 其他：爱好摄影，了解摄影原理与基础拍摄技巧；喜欢骑行，学过入门程度的网球和击剑
