@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="夏苏安的在线简历，方向为计算机视觉、4D Gaussian Splatting、VR 直播与沉浸式渲染。"
+      content="夏苏安的在线简历，方向为计算机视觉、非视域成像、4D Gaussian Splatting、VR 直播与沉浸式渲染。"
     >
     <title>夏苏安 | CV 工程师在线简历</title>
     <link rel="stylesheet" href="styles.css">
@@ -21,6 +21,7 @@
           <a href="#education">教育</a>
           <a href="#projects">项目</a>
           <a href="#experience">经历</a>
+          <a href="#publications">成果</a>
           <a href="#skills">技能</a>
           <a href="#contact">联系</a>
         </nav>
@@ -30,13 +31,14 @@
     <main id="top" class="page-shell">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro__content">
-          <p class="eyebrow">Computer Vision · 4DGS · VR Streaming</p>
+          <p class="eyebrow">Computer Vision · NLOS Imaging · 4DGS</p>
           <h1 id="intro-title">夏苏安</h1>
           <p class="intro__subtitle">CV 工程师候选人 / 上海科技大学计算机科学与技术硕士</p>
           <p class="intro__summary">
-            关注计算机视觉、计算摄影学、3D/4D 重建与沉浸式内容系统。具备从研究方法、训练框架到 Unity / OpenXR 端侧渲染与 VR 直播链路搭建的完整项目经验。
+            关注计算机视觉、计算摄影学、非视域成像、3D/4D 重建与沉浸式内容系统。具备从研究方法、训练框架到 Unity / OpenXR 端侧渲染与 VR 直播链路搭建的完整项目经验。
           </p>
           <div class="highlight-strip" aria-label="核心亮点">
+            <span>HOLI-1-to-3 / TPAMI</span>
             <span>4D Gaussian Splatting</span>
             <span>Genlock 多机同步</span>
             <span>WebRTC 低延时直播</span>
@@ -46,7 +48,7 @@
         <aside class="intro__panel" aria-label="简历摘要">
           <figure class="portrait-card">
             <img src="assets/self-150kb.jpg" alt="夏苏安证件照">
-            <figcaption>CV / 3D 重建 / VR 方向</figcaption>
+            <figcaption>CV / NLOS / 3D 重建方向</figcaption>
           </figure>
           <dl class="quick-facts">
             <div>
@@ -98,7 +100,7 @@
               </li>
               <li>
                 <span>方向</span>
-                <strong>计算机视觉</strong>
+                <strong>CV / NLOS</strong>
               </li>
               <li>
                 <span>出生年份</span>
@@ -111,9 +113,10 @@
             <h2>技能清单</h2>
             <div class="tag-group" aria-label="技能标签">
               <span>Computer Vision</span>
+              <span>NLOS Imaging</span>
+              <span>Transient Imaging</span>
               <span>4DGS</span>
               <span>Neural Rendering</span>
-              <span>Non-line-of-sight Imaging</span>
               <span>AIGC</span>
               <span>Python</span>
               <span>PyTorch</span>
@@ -167,7 +170,7 @@
               <div class="timeline-item__body">
                 <h3>上海科技大学 · 计算机科学与技术</h3>
                 <p>
-                  本科 + 硕士研究生，导师组：虞晶怡。研究方向包括计算机视觉、AI、计算摄影学，关注非视域成像、AIGC、3D/4D 重建与神经渲染。
+                  本科 + 硕士研究生，导师组：虞晶怡。研究方向包括计算机视觉、AI、计算摄影学和非视域成像，关注 2D/3D AIGC、瞬态成像、3D/4D 重建与神经渲染。
                 </p>
               </div>
             </article>
@@ -213,15 +216,19 @@
 
               <article class="project-item">
                 <div class="project-item__topline">
-                  <h3>结合 AIGC 的非视域成像</h3>
-                  <span>Research · Computational Imaging</span>
+                  <h3>HOLI-1-to-3：结合 AIGC 的非视域成像</h3>
+                  <span>TPAMI · RGB-T Fields · Diffusion Priors</span>
                 </div>
                 <p>
-                  探索 AIGC 与计算摄影方法在非视域成像任务中的结合方式，关注图像/几何先验对隐蔽场景重建质量的影响。
+                  面向单视点整体 3D 形状恢复，将 LOS RGB/深度信息与 NLOS 瞬态测量结合，利用 AIGC 生成先验缓解不可见背面几何歧义。
                 </p>
                 <ul>
-                  <li>参与问题定义、方法调研与实验设计。</li>
-                  <li>后续可继续补充数据集、模型结构、对比方法、实验指标与论文链接。</li>
+                  <li>引入 Neural RGB-T Fields，统一建模 LOS radiance field 与 NLOS transient field。</li>
+                  <li>采用两阶段优化：粗阶段结合 Stable Diffusion、Zero-1-to-3 与瞬态约束，细阶段通过 DMTet 提升 mesh 质量。</li>
+                  <li>在仿真与真实 RGB-transient 数据上验证；稀疏瞬态信息也能帮助消除不可见区域歧义并提升整体生成质量。</li>
+                  <li>
+                    <a class="inline-link" href="https://ieeexplore.ieee.org/document/10684158/">IEEE TPAMI 论文</a>
+                  </li>
                 </ul>
               </article>
             </div>
@@ -237,19 +244,48 @@
               <div class="timeline-item__body">
                 <h3>宁波万有引力电子科技有限公司</h3>
                 <p>
-                  负责 CV、3D 重建、VR 直播与沉浸式渲染相关工作，参与从算法验证、系统搭建到头显端展示的完整工程流程。
+                  负责 CV、3D 重建、VR 直播与沉浸式渲染相关工作，参与从算法验证、训练系统搭建到头显端展示的完整工程流程。
                 </p>
               </div>
             </article>
-            <article class="timeline-item">
-              <div class="timeline-item__meta">成果待补充</div>
-              <div class="timeline-item__body">
-                <h3>论文、专利、技术文章与 Demo</h3>
-                <p>
-                  可继续补充论文、项目报告、代码仓库、技术博客、演示视频或可交互 Demo。对 CV 岗位来说，量化指标和可访问作品会非常加分。
-                </p>
-              </div>
-            </article>
+          </section>
+
+          <section id="publications" class="content-section" aria-labelledby="publications-title">
+            <div class="section-heading">
+              <p>Publications</p>
+              <h2 id="publications-title">论文与成果</h2>
+            </div>
+            <div class="publication-list">
+              <article class="publication-item">
+                <h3>HOLI-1-to-3: Transient-Enhanced Holistic Image-to-3D Generation</h3>
+                <p>Siyuan Shen, Suan Xia, Xingyue Peng, Ziyu Wang, Yingsheng Zhu, Shiying Li, Jingyi Yu · IEEE TPAMI 2025</p>
+                <a href="https://ieeexplore.ieee.org/document/10684158/">IEEE</a>
+              </article>
+
+              <article class="publication-item">
+                <h3>TransiT: Transient Transformer for Non-line-of-sight Videography</h3>
+                <p>Ruiqian Li, Siyuan Shen, Suan Xia, Ziheng Wang, Xingyue Peng, Chengxuan Song, Yingsheng Zhu, Tao Wu, Shiying Li, Jingyi Yu · ICCV 2025</p>
+                <a href="https://arxiv.org/abs/2503.11328">arXiv</a>
+              </article>
+
+              <article class="publication-item">
+                <h3>Neural Reconstruction through Scattering Media with Forward and Backward Losses</h3>
+                <p>Yuehan Wang, Siyuan Shen, Suan Xia, Ruiqian Li, Xingyue Peng, Yanhua Yu, Shiying Li, Jingyi Yu · ICCP 2023</p>
+                <a href="https://ieeexplore.ieee.org/document/10233796">IEEE</a>
+              </article>
+
+              <article class="publication-item">
+                <h3>MARMOT: Masked Autoencoder for Modeling Transient Imaging</h3>
+                <p>Siyuan Shen, Ziheng Wang, Xingyue Peng, Suan Xia, Ruiqian Li, Shiying Li, Jingyi Yu · arXiv 2025</p>
+                <a href="https://arxiv.org/abs/2506.08470">arXiv</a>
+              </article>
+
+              <article class="publication-item">
+                <h3>Enhancing Non-line-of-sight Imaging via Learnable Inverse Kernel and Attention Mechanisms</h3>
+                <p>Yanhua Yu, Siyuan Shen, Zi Wang, Binbin Huang, Yuehan Wang, Xingyue Peng, Suan Xia, Ping Liu, Ruiqian Li, Shiying Li · ICCV 2023</p>
+                <a href="https://ieeexplore.ieee.org/document/10378421">IEEE</a>
+              </article>
+            </div>
           </section>
         </div>
       </div>

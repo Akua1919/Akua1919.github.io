@@ -42,6 +42,14 @@ a:hover {
   color: var(--accent-strong);
 }
 
+.inline-link {
+  color: var(--accent-strong);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .masthead {
   position: sticky;
   top: 0;
@@ -313,7 +321,8 @@ h1 {
 
 .info-list,
 .contact-list,
-.project-item ul {
+.project-item ul,
+.publication-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -420,7 +429,8 @@ h1 {
 
 .timeline-item__body p,
 .project-item p,
-.project-item li {
+.project-item li,
+.publication-item p {
   color: var(--muted);
 }
 
@@ -434,11 +444,57 @@ h1 {
   gap: 18px;
 }
 
+.publication-list {
+  display: grid;
+  gap: 12px;
+}
+
 .project-item {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.68);
   padding: 22px;
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 18px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.publication-item:first-child {
+  padding-top: 0;
+}
+
+.publication-item h3 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+  font-size: 1.02rem;
+}
+
+.publication-item p {
+  margin-bottom: 0;
+  font-size: 0.94rem;
+}
+
+.publication-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  border: 1px solid rgba(31, 122, 104, 0.26);
+  border-radius: 8px;
+  padding: 4px 10px;
+  color: var(--accent-strong);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.publication-item a:hover {
+  background: rgba(31, 122, 104, 0.08);
 }
 
 .project-item__topline {
@@ -586,6 +642,14 @@ h1 {
   .project-item__topline span {
     justify-self: start;
     text-align: left;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-item a {
+    justify-self: start;
   }
 
   h1 {

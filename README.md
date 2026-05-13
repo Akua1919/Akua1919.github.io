@@ -5,4 +5,4 @@
 - 在线主页：<https://akua1919.github.io>
 - Markdown 简历：[resume.md](resume.md)
 
-当前版本仍在补充经历、项目和作品集内容。
+当前版本将持续更新研究项目、工程经历、论文成果与作品集内容。

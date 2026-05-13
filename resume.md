@@ -1,6 +1,6 @@
 # 夏苏安
 
-> 计算机视觉 / 4D Gaussian Splatting / VR 直播与沉浸式渲染
+> 计算机视觉 / 非视域成像 / 4D Gaussian Splatting / VR 直播与沉浸式渲染
 
 ![夏苏安](assets/self-150kb.jpg)
 
@@ -18,7 +18,7 @@
 - 男 / 1999
 - 上海科技大学，计算机科学与技术，本科 + 硕士研究生
 - 工作年限：1 年
-- 研究方向：计算机视觉、AI、计算摄影学
+- 研究方向：计算机视觉、AI、计算摄影学、非视域成像
 
 ## 教育经历
 
@@ -28,16 +28,19 @@
 
 - 学历：本科 + 硕士研究生
 - 导师组：虞晶怡
-- 研究方向：计算机视觉、AI、计算摄影学
-- 关注主题：非视域成像、AIGC、3D/4D 重建、神经渲染
+- 研究方向：计算机视觉、AI、计算摄影学、非视域成像
+- 关注主题：2D/3D AIGC、瞬态成像、3D/4D 重建、神经渲染
 
 ## 学术相关项目
 
-### 结合 AIGC 的非视域成像
+### HOLI-1-to-3：结合 AIGC 的非视域成像与整体 3D 生成
 
-- 围绕非视域成像任务，探索 AIGC 与计算摄影方法在隐蔽场景重建中的结合方式。
-- 参与问题定义、方法调研与实验设计，关注图像/几何先验对重建质量的影响。
-- 后续可继续补充数据集、模型结构、对比方法、实验指标，以及论文或报告链接。
+- 论文链接：[IEEE TPAMI](https://ieeexplore.ieee.org/document/10684158/)
+- 面向单视点整体 3D 形状恢复问题，结合 line-of-sight（LOS）RGB/深度信息与 non-line-of-sight（NLOS）瞬态测量，缓解单图像 3D 生成中不可见背面几何歧义。
+- 方法上引入 Neural RGB-T Fields，将 LOS RGB 图像对应的 radiance field 与 NLOS transients 对应的 transient field 统一到同一神经全光表示中。
+- 使用两阶段优化流程：粗阶段结合 Stable Diffusion、Zero-1-to-3 等生成先验与瞬态约束获得初始几何，细阶段通过 DMTet 提升最终 mesh 质量。
+- 在仿真与真实采集数据上验证方法效果；实验显示，即使稀疏瞬态信息也能帮助消除不可见区域歧义，并提升整体生成质量。
+- 个人收获：系统理解了 AIGC 先验、ToF/SPAD 瞬态测量、可微渲染和 3D 表示在计算摄影任务中的结合方式。
 
 ## 工作经历
 
@@ -62,12 +65,17 @@
 
 ## 论文与成果
 
-- 待补充论文、专利、项目报告、技术文章或 Demo 链接。
+1. **Siyuan Shen, Suan Xia, Xingyue Peng, Ziyu Wang, Yingsheng Zhu, Shiying Li, Jingyi Yu.** HOLI-1-to-3: Transient-Enhanced Holistic Image-to-3D Generation. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 2025. [IEEE](https://ieeexplore.ieee.org/document/10684158/)
+2. **Ruiqian Li, Siyuan Shen, Suan Xia, Ziheng Wang, Xingyue Peng, Chengxuan Song, Yingsheng Zhu, Tao Wu, Shiying Li, Jingyi Yu.** TransiT: Transient Transformer for Non-line-of-sight Videography. *ICCV*, 2025. [arXiv](https://arxiv.org/abs/2503.11328)
+3. **Yuehan Wang, Siyuan Shen, Suan Xia, Ruiqian Li, Xingyue Peng, Yanhua Yu, Shiying Li, Jingyi Yu.** Neural Reconstruction through Scattering Media with Forward and Backward Losses. *ICCP*, 2023. [IEEE](https://ieeexplore.ieee.org/document/10233796)
+4. **Siyuan Shen, Ziheng Wang, Xingyue Peng, Suan Xia, Ruiqian Li, Shiying Li, Jingyi Yu.** MARMOT: Masked Autoencoder for Modeling Transient Imaging. *arXiv*, 2025. [arXiv](https://arxiv.org/abs/2506.08470)
+5. **Yanhua Yu, Siyuan Shen, Zi Wang, Binbin Huang, Yuehan Wang, Xingyue Peng, Suan Xia, Ping Liu, Ruiqian Li, Shiying Li.** Enhancing Non-line-of-sight Imaging via Learnable Inverse Kernel and Attention Mechanisms. *ICCV*, 2023. [IEEE](https://ieeexplore.ieee.org/document/10378421)
 
 ## 技能清单
 
 - 编程与实验：Python、PyTorch、MATLAB、C++
-- 视觉与重建：Computer Vision、3D/4D Gaussian Splatting、Neural Rendering、Non-line-of-sight Imaging、AIGC
+- 视觉与重建：Computer Vision、Non-line-of-sight Imaging、Transient Imaging、3D/4D Gaussian Splatting、Neural Rendering、AIGC
 - 图形与 XR：Unity、OpenXR、实时渲染、头显端内容展示
 - 直播与工程：WebRTC、Flutter、流媒体服务器、多机同步、Genlock、多卡训练
 - 开发工具：Git、Codex、Claude Code；能使用 AI 辅助开发工具提升代码实现、调试、重构与文档整理效率
+- 其他：爱好摄影，了解基础摄影原理与拍摄技巧；喜欢骑行，学过入门程度的网球和击剑
